@@ -4,7 +4,6 @@ project(PreCommitTest VERSION "1.0" DESCRIPTION "CMake module to install pre-com
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}")
 
-include(CMakeFormat)
 include(PreCommit)
 
 message(STATUS "OK.")
