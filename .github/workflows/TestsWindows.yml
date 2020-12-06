@@ -1,0 +1,21 @@
+name: Tests Windows
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run tests
+      run: |
+        cmake -S tests -B build/tests
